@@ -59,7 +59,9 @@ Limits the text to a specified number of words and adds an ellipsis if it exceed
 {% set myText = "This is a long sentence with many words." %}
 {{ myText | truncatewords(5) }}
 
+for more such examples 
 
+https://developers.hubspot.com/docs/cms/hubl/filters
 
 
 
