@@ -1,0 +1,71 @@
+To capatilize
+{% set myText = "hello world" %}
+{{ myText | capitalize }}
+
+To convert to lowercase
+{% set myText = "HELLO WORLD" %}
+{{ myText | lower }}
+
+Capitalizes the first letter of each word in the text.
+{% set myText = "hello world" %}
+{{ myText | title }}
+
+Replaces occurrences of a substring with another substring.
+{% set myText = "Hello world" %}
+{{ myText | replace("world", "universe") }}
+
+Limits the text to a specified length and adds an ellipsis if it exceeds that length.
+{% set myText = "This is a long sentence." %}
+{{ myText | truncate(10) }}
+
+Retrieves the length of a string.
+{% set myText = "Hello world" %}
+{{ myText | length }}
+
+ Extracts a portion of a string based on start and end indices.
+{% set myText = "Hello world" %}
+{{ myText | slice(0, 5) }}
+
+ Removes leading and trailing whitespace from a string.
+{% set myText = "   Hello world    " %}
+{{ myText | trim }}
+
+Concatenates multiple strings with a specified separator.
+{% set fruits = ["apple", "banana", "orange"] %}
+{{ fruits | join(", ") }}
+
+Splits a string into an array based on a specified separator.
+{% set myText = "apple,banana,orange" %}
+{% set myArray = myText | split(",") %}
+{{ myArray }}
+
+ Sets a default value if a variable is not defined or is empty.
+{% set myText = "" %}
+{{ myText | default("No text available") }}
+
+Reverses the order of characters in a string.
+{% set myText = "Hello world" %}
+{{ myText | reverse }}
+
+URL-encodes a string.
+{% set myText = "Hello world!" %}
+{{ myText | urlencode }}
+
+Counts the number of words in a string.
+{% set myText = "This is a sentence." %}
+{{ myText | wordcount }}
+
+Limits the text to a specified number of words and adds an ellipsis if it exceeds that limit.
+{% set myText = "This is a long sentence with many words." %}
+{{ myText | truncatewords(5) }}
+
+
+
+
+
+
+
+
+
+
+
